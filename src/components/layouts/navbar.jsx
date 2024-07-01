@@ -1,15 +1,7 @@
-import { CircleUser, Menu, Package2, Search } from "lucide-react"
+import { CircleUser, Menu, IceCream } from "lucide-react"; // Updated icon to IceCream
 
 import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,8 +23,8 @@ function SharedLayout() {
             href="#"
             className="flex items-center gap-2 text-lg font-semibold md:text-base"
           >
-            <Package2 className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
+            <IceCream className="h-6 w-6" /> {/* Updated icon */}
+            <span className="sr-only">Ice Cream Truck</span> {/* Updated name */}
           </a>
           <a
             href="#"
@@ -58,8 +50,8 @@ function SharedLayout() {
                 href="#"
                 className="flex items-center gap-2 text-lg font-semibold"
               >
-                <Package2 className="h-6 w-6" />
-                <span className="sr-only">Acme Inc</span>
+                <IceCream className="h-6 w-6" /> {/* Updated icon */}
+                <span className="sr-only">Ice Cream Truck</span> {/* Updated name */}
               </a>
               <a
                 href="#"
@@ -89,7 +81,7 @@ function SharedLayout() {
           </DropdownMenu>
         </div>
       </header>
-      <main className="flex flex-1">
+      <main className="flex flex-1 flex-col items-center justify-center bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 p-4"> {/* Updated main classNames */}
         <Outlet />
       </main>
     </div>
